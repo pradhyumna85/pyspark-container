@@ -1,0 +1,3 @@
+docker run --rm -p 10000:8888 -p 10001:4040 --name pyspark-notebook -e JUPYTER_ENABLE_LAB=yes -v ${PWD}:/home/jovyan/work jupyter/pyspark-notebook
+
+docker run --rm -d -p 10000:8888 -p 10001:4041 -p 10001:4040 --name pyspark-notebook -e JUPYTER_ENABLE_LAB=yes -v ${PWD}:/home/jovyan/work jupyter/pyspark-notebook
